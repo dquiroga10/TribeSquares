@@ -106,7 +106,7 @@ class TribeSquares(QWidget):
         if 0 <= row < ROWS and 0 <= col < COLUMNS:
             if self.ply0_brd[row][col] == '' and self.ply1_brd[row][col] == '':
                 self.counter = 0
-                self.Alternate()
+                self.Alternate() #move this to fix the inconsistentcy of palyer score reference
                 if self.__turn == 0:
                     self.ply0_brd[row][col] = 0
                     self.__board[row][col] = 0
